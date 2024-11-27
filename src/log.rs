@@ -9,11 +9,11 @@ pub fn info(message: &str) {
 }
 
 pub fn warning(message: &str) {
-    println!("{}", format!("{} WARNING: {} [at {}]", WARNING_ICON, message, timestamp()).blue());
+    println!("{}", format!("{} WARNING: {} [at {}]", WARNING_ICON, message, timestamp()).yellow());
 }
 
 pub fn error(message: &str) {
-    println!("{}", format!("{} ERROR: {} [at {}]", ERROR_ICON, message, timestamp()).blue());
+    println!("{}", format!("{} ERROR: {} [at {}]", ERROR_ICON, message, timestamp()).red());
 }
 
 
